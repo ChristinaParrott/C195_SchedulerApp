@@ -1,0 +1,29 @@
+Successful Login By: test at: 2020-04-06T20:52:59.915
+Customer added by test with customer ID: 1 at: 2020-04-06T20:54:17.030
+Customer added by test with customer ID: 2 at: 2020-04-06T20:55:05.240
+Customer added by test with customer ID: 3 at: 2020-04-06T20:56:00.879
+Customer added by test with customer ID: 4 at: 2020-04-06T20:56:55.220
+Customer added by test with customer ID: 5 at: 2020-04-06T20:57:43.912
+Customer added by test with customer ID: 6 at: 2020-04-06T20:58:32.259
+Customer added by test with customer ID: 7 at: 2020-04-06T20:59:37.433
+Customer added by test with customer ID: 8 at: 2020-04-06T21:00:22.668
+Customer added by test with customer ID: 9 at: 2020-04-06T21:01:14.377
+Customer added by test with customer ID: 10 at: 2020-04-06T21:01:55.880
+Customer edited by test with customer ID: 10 at: 2020-04-06T21:02:16.703
+Appointment added by test with appointment ID: 1 at: 2020-04-06T21:05:51.564
+Appointment added by test with appointment ID: 2 at: 2020-04-06T21:07:52.657
+Appointment added by test with appointment ID: 3 at: 2020-04-06T21:09:55.838
+Appointment added by test with appointment ID: 4 at: 2020-04-06T21:14:14.826
+Appointment added by test with appointment ID: 5 at: 2020-04-06T21:15:27.107
+Appointment added by test with appointment ID: 6 at: 2020-04-06T21:17:14.802
+Appointment added by test with appointment ID: 7 at: 2020-04-06T21:18:54.496
+Appointment added by test with appointment ID: 8 at: 2020-04-06T21:20:55.653
+Appointment added by test with appointment ID: 9 at: 2020-04-06T21:22:06.347
+Appointment added by test with appointment ID: 10 at: 2020-04-06T21:23:24.354
+Successful Login By: test at: 2020-04-07T10:50:18.291
+Successful Login By: test at: 2020-04-07T10:54:08.570
+Successful Login By: test at: 2020-04-07T10:59:05.660
+Appointment edited by test with appointment ID: 5 at: 2020-04-07T10:59:23.568
+Appointment edited by test with appointment ID: 4 at: 2020-04-07T11:01:30.878
+Appointment edited by test with appointment ID: 4 at: 2020-04-07T11:02:08.213
+Appointment edited by test with appointment ID: 5 at: 2020-04-07T11:02:27.156

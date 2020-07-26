@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scheduler.GUI.Add_Appt_Controller">
+   <children>
+      <VBox layoutX="22.0" layoutY="47.0" prefHeight="400.0" prefWidth="72.0" spacing="19.0">
+         <children>
+            <Label fx:id="Cust_name_lbl" text="Customer" />
+            <Label fx:id="uApptLbl" text="User" />
+            <Label fx:id="Title_lbl" text="Title" />
+            <Label fx:id="Descr_lbl" text="Description" />
+            <Label fx:id="Loc_lbl" text="Location" />
+            <Label fx:id="Contact_lbl" text="Contact" />
+            <Label fx:id="Type_lbl" text="Type" />
+            <Label fx:id="URL_lbl" text="URL" />
+         </children>
+      </VBox>
+      <VBox layoutX="92.0" layoutY="47.0" prefHeight="400.0" prefWidth="223.0" spacing="10.0">
+         <children>
+            <ComboBox fx:id="custBox" prefHeight="25.0" prefWidth="324.0" />
+            <ComboBox fx:id="userBox" prefHeight="25.0" prefWidth="234.0" />
+            <TextField fx:id="titleTxt" prefHeight="25.0" prefWidth="302.0" />
+            <TextField fx:id="descrTxt" prefHeight="25.0" prefWidth="302.0" />
+            <TextField fx:id="locTxt" prefHeight="25.0" prefWidth="302.0" />
+            <TextField fx:id="conTxt" prefHeight="25.0" prefWidth="302.0" />
+            <TextField fx:id="typeTxt" prefHeight="25.0" prefWidth="302.0" />
+            <TextField fx:id="URLTxt" prefHeight="25.0" prefWidth="302.0" />
+         </children>
+      </VBox>
+      <Label fx:id="SDate_lbl" layoutX="348.0" layoutY="89.0" text="Start Date" />
+      <Label fx:id="Add_Appt_lbl" layoutX="243.0" layoutY="14.0" text="New Appointment">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="sDatePick" layoutX="432.0" layoutY="85.0" prefHeight="25.0" prefWidth="152.0" />
+      <HBox layoutX="348.0" layoutY="125.0" prefHeight="25.0" prefWidth="239.0" spacing="10.0">
+         <children>
+            <Label fx:id="STime_lbl" prefHeight="25.0" prefWidth="72.0" text="Start Time" />
+            <ComboBox fx:id="sHourBox" prefHeight="25.0" prefWidth="72.0" promptText="HH" />
+            <ComboBox fx:id="sMinBox" prefHeight="25.0" prefWidth="72.0" promptText="MM" />
+         </children>
+      </HBox>
+      <Label fx:id="EDate_lbl" layoutX="348.0" layoutY="192.0" text="End Date" />
+      <DatePicker fx:id="eDatePick" layoutX="427.0" layoutY="188.0" prefHeight="25.0" prefWidth="152.0" />
+      <HBox layoutX="348.0" layoutY="230.0" prefHeight="25.0" prefWidth="239.0" spacing="10.0">
+         <children>
+            <Label fx:id="ETime_lbl" prefHeight="25.0" prefWidth="72.0" text="End Time" />
+            <ComboBox fx:id="eHourBox" prefHeight="25.0" prefWidth="72.0" promptText="HH" />
+            <ComboBox fx:id="eMinBox" prefHeight="25.0" prefWidth="72.0" promptText="MM" />
+         </children>
+      </HBox>
+      <HBox layoutX="379.0" layoutY="387.0" prefHeight="31.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Button fx:id="saveApptBtn" mnemonicParsing="false" onAction="#saveApptAction" prefWidth="60.0" text="Save" />
+            <Button fx:id="clearApptBtn" mnemonicParsing="false" onAction="#clearApptAction" prefHeight="14.0" prefWidth="60.0" text="Clear" />
+            <Button fx:id="backApptBtn" mnemonicParsing="false" onAction="#backApptAction" prefHeight="25.0" prefWidth="60.0" text="Back" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

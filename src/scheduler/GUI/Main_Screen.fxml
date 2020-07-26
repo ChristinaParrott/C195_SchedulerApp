@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scheduler.GUI.Main_Screen_Controller">
+   <children>
+      <TabPane fx:id="tabPane" layoutX="6.0" layoutY="5.0" prefHeight="520.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="custTab" text="Customers">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="450.0" prefWidth="1000.0">
+                     <children>
+                        <HBox layoutX="9.0" layoutY="422.0" prefHeight="25.0" prefWidth="600.0" spacing="10.0">
+                           <children>
+                              <Button fx:id="addCustBtn" mnemonicParsing="false" onAction="#addCustAction" prefHeight="25.0" prefWidth="193.0" text="Add Customer" />
+                              <Button fx:id="updateCustBtn" mnemonicParsing="false" onAction="#updateCustAction" prefHeight="25.0" prefWidth="193.0" text="Update Customer" />
+                              <Button fx:id="delCustBtn" mnemonicParsing="false" onAction="#delCustAction" prefHeight="25.0" prefWidth="193.0" text="Delete Customer" />
+                           </children>
+                        </HBox>
+                        <TableView fx:id="custTable" layoutX="9.0" layoutY="58.0" prefHeight="345.0" prefWidth="980.0">
+                          <columns>
+                            <TableColumn fx:id="cNameCol" editable="false" minWidth="-1.0" prefWidth="140.0" text="Name" />
+                              <TableColumn fx:id="cAddrCol" editable="false" minWidth="-1.0" prefWidth="140.0" text="Address" />
+                              <TableColumn fx:id="cAddrCol2" editable="false" minWidth="-1.0" prefWidth="140.0" text="Address 2" />
+                              <TableColumn fx:id="cCityCol" editable="false" minWidth="-1.0" prefWidth="140.0" text="City" />
+                              <TableColumn fx:id="cPostCol" editable="false" minWidth="-1.0" prefWidth="140.0" text="Postal Code" />
+                              <TableColumn fx:id="cCountryCol" editable="false" minWidth="-1.0" prefWidth="140.0" text="Country" />
+                              <TableColumn fx:id="cPhoneCol" editable="false" minWidth="-1.0" prefWidth="140.0" text="Phone" />
+                          </columns>
+                        </TableView>
+                        <Label fx:id="custLbl" layoutX="449.0" layoutY="14.0" text="Customers">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="calTab" text="Calendar">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="calTable" layoutX="10.0" layoutY="53.0" prefHeight="353.0" prefWidth="980.0">
+                          <columns>
+                            <TableColumn fx:id="aTitleCol" prefWidth="83.0" text="Title" />
+                              <TableColumn fx:id="aCustCol" prefWidth="83.0" text="Customer" />
+                              <TableColumn fx:id="aUserCol" prefWidth="83.0" text="User" />
+                            <TableColumn fx:id="aDescCol" prefWidth="82.0" text="Description" />
+                              <TableColumn fx:id="aLocCol" prefWidth="82.0" text="Location" />
+                              <TableColumn fx:id="aContCol" prefWidth="82.0" text="Contact" />
+                              <TableColumn fx:id="aTypeCol" minWidth="78.0" prefWidth="82.0" text="Type" />
+                              <TableColumn fx:id="aURLCol" prefWidth="82.0" text="URL" />
+                              <TableColumn fx:id="aStartCol" prefWidth="160.0" text="Start" />
+                              <TableColumn fx:id="aEndCol" prefWidth="160.0" text="End" />
+                          </columns>
+                        </TableView>
+                        <HBox layoutX="14.0" layoutY="422.0" prefHeight="25.0" prefWidth="600.0" spacing="10.0">
+                           <children>
+                              <Button fx:id="addApptBtn" mnemonicParsing="false" onAction="#addApptAction" prefHeight="25.0" prefWidth="193.0" text="Add Appointment" />
+                              <Button fx:id="updateApptBtn" mnemonicParsing="false" onAction="#updateApptAction" prefWidth="193.0" text="Update Appointment" />
+                              <Button fx:id="delApptBtn" mnemonicParsing="false" onAction="#delApptAction" prefWidth="193.0" text="Delete Appointment" />
+                           </children>
+                        </HBox>
+                        <RadioButton fx:id="weekRadBtn" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#calBtnAction" selected="true" text="Weekly">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="calBtnGrp" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="monthRadBtn" layoutX="126.0" layoutY="14.0" mnemonicParsing="false" onAction="#calBtnAction" text="Monthly" toggleGroup="$calBtnGrp" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="reportTab" text="Reports">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="reportLbl" layoutX="463.0" layoutY="14.0" text="Reports">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="reportTxt" editable="false" layoutX="15.0" layoutY="138.0" prefHeight="317.0" prefWidth="970.0" />
+                        <HBox layoutX="16.0" layoutY="81.0" prefHeight="39.0" prefWidth="968.0" spacing="20.0">
+                           <children>
+                              <Label fx:id="rTypeLbl" prefWidth="153.0" text="Select Report Type:" />
+                              <ComboBox fx:id="rTypeBox" onAction="#reportBoxAction" prefHeight="39.0" prefWidth="241.0" />
+                              <Label fx:id="rDetailLbl" text="Report Details:" />
+                              <ComboBox fx:id="rDetailBox" prefHeight="39.0" prefWidth="216.0" />
+                              <Button fx:id="rGenBtn" mnemonicParsing="false" onAction="#genReportAction" prefWidth="160.0" text="Generate Report" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button fx:id="exitBtn" layoutX="799.0" layoutY="547.0" mnemonicParsing="false" onAction="#exitBtnAction" prefHeight="25.0" prefWidth="193.0" text="Exit" />
+   </children>
+</AnchorPane>

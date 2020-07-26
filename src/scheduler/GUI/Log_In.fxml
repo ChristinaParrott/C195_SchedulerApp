@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="344.0" prefWidth="457.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scheduler.GUI.Log_In_Controller">
+   <children>
+      <GridPane layoutX="17.0" layoutY="130.0" prefHeight="84.0" prefWidth="432.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="136.0" minWidth="10.0" prefWidth="71.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="215.0" minWidth="10.0" prefWidth="210.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="uNameLbl" alignment="TOP_RIGHT" contentDisplay="RIGHT" prefHeight="20.0" prefWidth="154.0" text="Username:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="passLbl" alignment="TOP_RIGHT" contentDisplay="RIGHT" prefHeight="20.0" prefWidth="139.0" text="Password:" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="uNameTxt" prefHeight="25.0" prefWidth="199.0" GridPane.columnIndex="1" />
+            <PasswordField fx:id="passTxt" prefHeight="25.0" prefWidth="199.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Label fx:id="titleTxt" alignment="TOP_CENTER" layoutX="153.0" layoutY="38.0" text="Schedule Manager">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <HBox alignment="TOP_CENTER" layoutX="11.0" layoutY="281.0" prefHeight="39.0" prefWidth="440.0" spacing="10.0">
+         <children>
+            <Button fx:id="logInBtn" mnemonicParsing="false" onAction="#logInBtnAction" prefHeight="25.0" prefWidth="80.0" text="Log In" />
+            <Button fx:id="clearBtn" mnemonicParsing="false" onAction="#clearBtnAction" prefHeight="25.0" prefWidth="80.0" text="Clear" />
+            <Button fx:id="exitBtn" mnemonicParsing="false" onAction="#exitBtnAction" prefHeight="25.0" prefWidth="80.0" text="Exit" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
