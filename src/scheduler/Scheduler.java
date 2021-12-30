@@ -15,6 +15,7 @@ import scheduler.GUI.Log_In_Controller;
  *
  * @author c.parrott
  */
+
 public class Scheduler extends Application {
     
     @Override
